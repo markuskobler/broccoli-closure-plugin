@@ -1,4 +1,4 @@
-# [broccoli](https://github.com/joliss/broccoli)-closure
+# broccoli-closure
 
 A [closure compiler](https://github.com/google/closure-compiler) plugin for [broccoli](https://github.com/joliss/broccoli).
 
