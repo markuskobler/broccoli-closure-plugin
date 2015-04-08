@@ -31,7 +31,6 @@ var closure = require('broccoli-closure');
 var js =  closure('js', 'app.js', {
   'language_in':         'ECMASCRIPT6',
   'language_out':        'ECMASCRIPT5',
-  'rewrite_es6_modules': true,
   'warning_level':       'verbose',
   'jscomp_warning':      ['undefinedVars', 'checkRegExp', 'const', 'constantProperty', 'accessControls'],
   'output_wrapper':      '(function(){%output%})()',
