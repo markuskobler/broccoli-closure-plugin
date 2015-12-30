@@ -10,7 +10,9 @@
     "copy-dereference": "^1.0.0",
     "mkdirp": "^0.5.1",
     "rsvp": "^3.0.6",
-    "tar": "^2.1.1"
+    "tar": "^2.1.1",
+    "espree":"^2.2.4",
+    "ast-types": "^0.8.14"
   },
   "scripts":{
     "install":"node scripts/update-closure.js",
