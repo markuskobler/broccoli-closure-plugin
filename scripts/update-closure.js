@@ -31,7 +31,7 @@ downloadCompiler('vendor', etag, function(err, etag) {
 function downloadCompiler(out, etag, callback) {
   var req = http.request({
     method: 'GET',
-    path: '/closure-compiler/compiler-latest.tar.gz',
+    path: '/closure-compiler/compiler-20160517.tar.gz',
     hostname: 'dl.google.com',
     headers: etag ? {'If-None-Match': etag} : {}
   });
