@@ -3,11 +3,11 @@
 // TODO: add proxy support?
 // TODO: improve errors reporting
 
-var http = require('http');
-var zlib = require('zlib');
-var fs   = require('fs');
-var join = require('path').join;
-var tar  = require('tar');
+var https = require('https');
+var zlib  = require('zlib');
+var fs    = require('fs');
+var join  = require('path').join;
+var tar   = require('tar');
 
 var etag, etagPath = join('vendor', '.etag');
 
@@ -29,7 +29,7 @@ downloadCompiler('vendor', etag, function(err, etag) {
 })
 
 function downloadCompiler(out, etag, callback) {
-  var req = http.request({
+  var req = https.request({
     method: 'GET',
     path: '/closure-compiler/compiler-latest.tar.gz',
     hostname: 'dl.google.com',
